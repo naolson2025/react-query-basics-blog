@@ -15,7 +15,7 @@ function App() {
       </div>
       {/*
         dev tools will not be included in production
-        it checks for process.node.ENV === 'production'
+        it checks for process.env.NODE_ENV === 'production'
       */}
       <ReactQueryDevtools />
     </QueryClientProvider>

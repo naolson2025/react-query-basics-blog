@@ -20,6 +20,7 @@ export function Posts() {
   const queryClient = useQueryClient();
 
   useEffect(() => {
+    // prefetch the next page of posts, if there is a next page
     if(currentPage < maxPostPage) {
       queryClient.prefetchQuery(
         ["posts", currentPage + 1],
